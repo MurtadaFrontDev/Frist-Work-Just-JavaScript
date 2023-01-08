@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #727272;
+}
+
+/* Start App */
+.imgApp {
+    border-radius: 15px;
+    position: absolute;
+    width: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 4px 3px 20px #0a0a0a;
+    cursor: pointer;
+    transition: all .3s;
+    z-index: 2;
+
+}
+
+.imgApp:hover {
+    width: 70px;
+    border-radius: 10px;
+}
+
+/* End App */
+
+
+/* Start App Home */
+
+
+.app-home {
+    background-color: #393a3c;
+    position: fixed;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    transition: all .6s cubic-bezier(0, 0.16, 0, 0.96);
+    padding: 0 20px 20px 20px;
+    z-index: 1;
+}
+
+.taskBar {
+    width: 100%;
+    height: 30px;
+    background-color: #747474b0;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.iconTaskBar {
+
+    width: 85px;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iconTaskBar span {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.iconTaskBar span:first-child {
+    background-color: #fd494a;
+}
+
+.iconTaskBar span:nth-child(2) {
+    background-color: #f3c102;
+}
+
+.iconTaskBar span:last-child {
+    background-color: #00D700;
+}
+
+/* End App Home */
+
+
+/* Start transform animation*/
+.scaleOut {
+    width: 30px;
+
+}
+
+.scaleOps {
+    opacity: 0;
+}
+
+.scaleOutApp {
+    width: 98%;
+    height: 95%;
+    opacity: 1;
+
+}
+
+.scaleCen {
+    width: 68%;
+    height: 65%;
+}
+
+/* End transform animation*/
